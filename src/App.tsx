@@ -13,6 +13,7 @@ import {
   TextInput,
   InputWrapper,
   Stack,
+  Tooltip,
 } from '@mantine/core';
 
 function App() {
@@ -81,6 +82,68 @@ function App() {
                 </InputWrapper>
               </Stack>
             </div>
+            <div className="p-[20px] mt-4 border border-solid rounded-lg border-gray-100 shadow-lg">
+              <Stack>
+                <InputWrapper
+                  id="coupon"
+                  label={
+                    <div>
+                      쿠폰
+                      <Tooltip
+                        label="쿠폰에 대한 설명"
+                        withArrow
+                        className="ml-2"
+                      >
+                        ℹ️
+                      </Tooltip>
+                    </div>
+                  }
+                >
+                  <div className="flex">
+                    <Input
+                      id="coupon"
+                      placeholder="01012341234"
+                      className="flex-1"
+                    />
+                    <Button variant="outline" color="gray" className="ml-2">
+                      쿠폰선택
+                    </Button>
+                  </div>
+                </InputWrapper>
+                <InputWrapper
+                  id="point"
+                  label={
+                    <div>
+                      포인트
+                      <Tooltip
+                        label="포인트에 대한 설명"
+                        withArrow
+                        className="ml-2"
+                      >
+                        ℹ️
+                      </Tooltip>
+                    </div>
+                  }
+                >
+                  <div className="flex">
+                    <Input
+                      id="point"
+                      placeholder="01012341234"
+                      className="flex-1"
+                    />
+                    <Button variant="outline" color="gray" className="ml-2">
+                      전액사용
+                    </Button>
+                  </div>
+                </InputWrapper>
+                <Button color="dark">15% 할인받기</Button>
+                <Button color="teal">결제하기</Button>
+              </Stack>
+            </div>
+            <Container className="flex justify-between mt-5">
+              <Text size="xs">궁금한 점이 있나요?</Text>
+              <Text size="xs">문의하기</Text>
+            </Container>
           </aside>
         </Container>
       </main>
