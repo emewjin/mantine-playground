@@ -16,13 +16,16 @@ import {
   Tooltip,
 } from '@mantine/core';
 
+// 헤딩 태그의 폰트 사이즈도 커스터마이징 가능하지만 일단은 하지 않고 테일윈드로 필요한 부분만 쓴다
 function App() {
   return (
     <>
       <nav className="w-full shadow-md">
         <Container className="flex justify-between" size={1084}>
           <Group>
-            <Title order={1}>인프런</Title>
+            <Title order={1} className="text-2xl">
+              인프런
+            </Title>
             {['강의', '로드맵', '멘토링', '커뮤니티', '채용정보'].map((el) => (
               <Text weight="bold" className="px-[14px] py-[20px]">
                 {el}
@@ -46,7 +49,7 @@ function App() {
       <main className="flex mt-5">
         <Container className="flex w-full" size={1084}>
           <section className="flex-1">
-            <Title order={2} className="mb-3">
+            <Title order={2} className="mb-3 text-xl">
               장바구니
             </Title>
             <Container fluid className="flex justify-between">
