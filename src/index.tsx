@@ -17,9 +17,19 @@ root.render(
         fontFamily:
           'Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, Helvetica Neue, Segoe UI, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif',
         colors: {
-          green: [
-            '#006a3d',
-            '#07362A',
+          brand: [
+            '#00C471',
+            '#00C471',
+            '#00C471',
+            '#00C471',
+            '#00C471',
+            '#00C471',
+            '#00C471',
+            '#00C471',
+            '#00C471',
+            '#00C471',
+          ],
+          primary: [
             '#EBFFF7',
             '#D5F5EB',
             '#B7EFD7',
@@ -27,8 +37,12 @@ root.render(
             '#00C471',
             '#00a65f',
             '#028c52',
+            '#006a3d',
+            '#07362A',
           ],
         },
+        primaryColor: 'primary',
+        primaryShade: { light: 4, dark: 8 },
       }}
     >
       <App />
