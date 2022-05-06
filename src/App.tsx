@@ -34,7 +34,7 @@ function App() {
               styles={{ rightSection: { pointerEvents: 'none' } }}
               rightSection={'🔍'}
             />
-            <Button color="teal">최근 강의</Button>
+            <Button color="green">최근 강의</Button>
             <ActionIcon>🛒</ActionIcon>
             <Indicator color="red" size={5}>
               <ActionIcon>🔔</ActionIcon>
@@ -137,7 +137,7 @@ function App() {
                   </div>
                 </InputWrapper>
                 <Button color="dark">15% 할인받기</Button>
-                <Button color="teal">결제하기</Button>
+                <Button color="green">결제하기</Button>
               </Stack>
             </div>
             <Container className="flex justify-between mt-5">
