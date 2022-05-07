@@ -51,3 +51,12 @@
 ### 컴포넌트별 styles API
 
 동적인 영역에 대한 스타일 커스터마이징 가능
+
+## DX
+
+- 툴팁 사용법이 랠릿이랑 비슷하고 간편
+  ```tsx
+  <Tooltip label="쿠폰에 대한 설명" withArrow className="ml-2">
+    ℹ️
+  </Tooltip>
+  ```

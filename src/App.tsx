@@ -44,7 +44,7 @@ function Lecture({ isFirst = false }) {
             </Text>
           </div>
         </div>
-        <div className="ml-10 self-start">X</div>
+        <ActionIcon className="ml-10 self-start">X</ActionIcon>
         <Divider orientation="vertical" my="sm" className="mx-6 my-0 h-auto" />
         <Text weight="bold" className="ml-auto self-start">
           99,999,000원
@@ -116,7 +116,7 @@ function App() {
             ))}
           </section>
           <aside className="w-[300px] ml-8">
-            <div className="p-[20px] border border-solid rounded-lg border-gray-100">
+            <div className="p-[20px] border border-solid rounded-lg border-gray-200">
               <Stack>
                 <TextInput
                   placeholder="실명 입력"
@@ -138,7 +138,7 @@ function App() {
                 </InputWrapper>
               </Stack>
             </div>
-            <div className="p-[20px] mt-4 border border-solid rounded-lg border-gray-100 shadow-lg">
+            <div className="p-[20px] mt-4 border border-solid rounded-lg border-gray-200 shadow-lg">
               <Stack>
                 <InputWrapper
                   id="coupon"
