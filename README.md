@@ -48,6 +48,28 @@
 - 컴포넌트별 커스텀 스타일링을 테마 프로바이더에서 전역으로 설정 가능, 컴포넌트의 각 구성요소에 class name추가도 전역으로 가능 -> 클래스 네임으로 선택해 스타일링하기 편할듯
 - 테마 프로바이더는 여러 개 사용, 중첩 사용 가능
 
+- 컴포넌트의 prop을 조건으로 커스터마이징 할 수도 있다. 예를 들어 버튼 컴포넌트의 사이즈별 height를 변경하고 싶다면 다음과 같이 작성한다
+
+```tsx
+styles={{
+  Button: (theme, params) => {
+    if (params.size === 'lg') {
+      return {
+        root: { height: 42, padding: '0 30px' },
+      };
+    }
+    if (params.size === 'sm') {
+      return {
+        root: { height: 22, padding: '0 30px' },
+      };
+    }
+    return {
+      root: { height: 30, padding: '0 30px' },
+    };
+  },
+}}
+```
+
 ### 컴포넌트별 styles API
 
 동적인 영역에 대한 스타일 커스터마이징 가능

@@ -218,8 +218,12 @@ function App() {
                     </Text>
                   </div>
                 </div>
-                <Button color="dark">15% 할인받기</Button>
-                <Button color="primary">결제하기</Button>
+                <Button size="lg" color="dark">
+                  15% 할인받기
+                </Button>
+                <Button size="sm" color="primary">
+                  결제하기
+                </Button>
                 <Text size="xs" color="gray">
                   회원 본인은 주문내용을 확인했으며, 구매조건 및
                   개인정보취급방침과 결제에 동의합니다.

@@ -44,6 +44,23 @@ root.render(
         primaryColor: 'primary',
         primaryShade: { light: 4, dark: 8 },
       }}
+      styles={{
+        Button: (theme, params) => {
+          if (params.size === 'lg') {
+            return {
+              root: { height: 42, padding: '0 30px' },
+            };
+          }
+          if (params.size === 'sm') {
+            return {
+              root: { height: 22, padding: '0 30px' },
+            };
+          }
+          return {
+            root: { height: 30, padding: '0 30px' },
+          };
+        },
+      }}
     >
       <App />
     </MantineProvider>
