@@ -13,6 +13,18 @@ export default {
         options: MANTINE_SIZES,
       },
     },
+    loaderPosition: {
+      control: {
+        type: 'select',
+        options: ['right', 'left'],
+      },
+    },
+    radius: {
+      control: {
+        type: 'select',
+        options: MANTINE_SIZES,
+      },
+    },
     variant: {
       control: {
         type: 'select',
@@ -46,4 +58,9 @@ Basic.args = {
   variant: 'filled',
   size: 'md',
   color: 'teal',
+  disabled: false,
+  compact: false,
+  loading: false,
+  loaderPosition: 'right',
+  fullWidth: false,
 };
